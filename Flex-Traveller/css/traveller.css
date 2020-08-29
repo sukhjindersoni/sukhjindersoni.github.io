@@ -1,0 +1,323 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Lexend Zetta', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 70px 10px;
+        animation: 1s animate 0.5s forwards;
+        opacity: 0;
+        color: white;
+        z-index: 10;
+    }
+    
+    @keyframes animate {
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    header h2 {
+        font-size: 35px;
+    }
+    
+    header nav {
+        display: flex;
+    }
+    
+    header nav li {
+        margin: 0 15px;
+    }
+    
+    nav,
+    ul {
+        list-style: none;
+    }
+    
+    @media (max-width:800px) {
+        header {
+            padding: 20px 50px;
+            flex-direction: column;
+        }
+        header h2 {
+            margin-bottom: 15px;
+        }
+        header nav li {
+            margin: 0 7px;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        opacity: 0.75;
+        color: white;
+    }
+    
+    a:hover {
+        opacity: 1;
+    }
+    
+    section.banner-area {
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+    }
+    
+    .img-area {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    @media (max-width:800px) {
+        .img-area img {
+            height: 95vh;
+        }
+    }
+    
+    .banner-area h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+        color: white;
+    }
+    
+    .banner-area h3 {
+        font-size: 25px;
+        margin-bottom: 40px;
+        color: white;
+    }
+    
+    .banner-text {
+        opacity: 0;
+        margin-top: 100px;
+        max-width: 700px;
+        height: 240px;
+        animation: 1s anime-two 1s forwards;
+    }
+    
+    .banner-area a.btn {
+        padding: 16px;
+    }
+    
+    @keyframes anime-two {
+        100% {
+            opacity: 1;
+            margin: 0;
+        }
+    }
+    
+    @media (max-width:800px) {
+        .banner-area {
+            min-height: 600px;
+        }
+        .banner-area h1 {
+            font-size: 28px;
+        }
+        .banner-area h3 {
+            font-size: 22px;
+        }
+        .banner-area a.btn {
+            padding: 15px 40px;
+        }
+    }
+    
+    a.btn {
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        background-color: goldenrod;
+        padding: 10px 10px;
+        color: white;
+        opacity: 1;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 80px;
+    }
+    
+    section h3.header-text {
+        text-transform: uppercase;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 5px;
+        color: black;
+    }
+    
+    section p {
+        max-width: 700px;
+        line-height: 2;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    @media (max-width:800px) {
+        section {
+            padding: 50px 20px;
+        }
+        section h3.header-text {
+            font-style: 25px;
+        }
+    }
+    
+    .content-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .services-area .content-area .single-service {
+        height: 380px;
+        padding: 20px;
+        flex-basis: 33%;
+        text-align: center;
+    }
+    
+    .icon-area {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        /**OR display:inline-block;*/
+        background-color: #262626;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .icon-area i {
+        color: white;
+        padding: 28px;
+        font-size: 40px;
+    }
+    
+    single-service h2 {
+        margin-bottom: 15px;
+    }
+    
+    @media (max-width:1000px) {
+        .services-area .content-area .single-service {
+            flex-basis: 30%;
+        }
+        .single-service h2 {
+            margin-bottom: 15px;
+        }
+    }
+    
+    @media (max-width:800px) {
+        .services-area .content-area .single-service {
+            flex-basis: 100%;
+        }
+    }
+    
+    .work-area,
+    .contact {
+        background-color: #ddd;
+    }
+    
+    .work-area .content-area li {
+        padding: 5px;
+        flex-basis: 50%;
+        text-align: center;
+    }
+    
+    .work-area img {
+        width: 100%;
+        /**height:auto;*/
+    }
+    
+    @media (max-width:800px) {
+        .work-area .content-area li {
+            flex-basis: 100%;
+            padding: 20px;
+        }
+    }
+    
+    .newsletter form {
+        display: flex;
+        /**align-items: center;
+    justify-content: center;*/
+        flex-wrap: wrap;
+        width: 60%;
+    }
+    
+    .newsletter form .btn {
+        padding: 20px 40px;
+    }
+    
+    .newsletter form input {
+        padding: 15px;
+        margin-right: 30px;
+        border: 1px solid #000;
+        flex: 1;
+        color: #666;
+        font-size: 18px;
+    }
+    
+    @media (max-width:800px) {
+        .newsletter form input {
+            flex-basis: 100%;
+            margin: 0 0 20px 0;
+        }
+    }
+    
+    .contact .content-area .single-contact {
+        height: 350px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .single-contact i {
+        font-size: 30px;
+    }
+    
+    .single-contact input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 35px;
+        padding: 15px;
+        border: 1px solid #262626;
+    }
+    
+    .single-contact input[type=submit] {
+        background: #f8c300;
+        border: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    @media (max-width:800px) {
+        .contact .contact-area .single-contact {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #262626;
+        color: white;
+        padding: 20px 0;
+    }
+    
+    footer p {
+        text-transform: uppercase;
+        font-size: 14px;
+        opacity: 0.6;
+        align-self: center;
+    }

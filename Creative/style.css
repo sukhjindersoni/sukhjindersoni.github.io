@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+*,
+*::before,
+*::after {
+    font-family: 'Raleway';
+    box-sizing: border-box;
+    transition: 400ms ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/************HEADER PART*************/
+
+
+/************************************/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+    color: white;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00ff6c;
+}
+
+@media (min-width:60rem) {
+    .logo {
+        float: left;
+    }
+    nav {
+        float: right;
+    }
+}
+
+@media (max-width:30rem) {
+    nav li {
+        margin: 0.5em;
+    }
+}
+
+
+/************HERO PART****************/
+
+
+/*************************************/
+
+.home-hero {
+    background-image: url(img/hero-bg.jpg);
+    padding: 10em 0;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width:60rem) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+
+/************TYPOGRAPHY PART************/
+
+
+/**************************************/
+
+h1 {
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-top: 0;
+}
+
+.title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
+}
+
+@media (min-width:60rem) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+
+/************HOME ABOUT****************/
+
+
+/**************************************/
+
+.home-about-textbox {
+    background: #232323;
+    color: white;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -3vw;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #00ff6c;
+    position: absolute;
+    top: .3em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #232323;
+    padding: 0 .25em;
+}
+
+@media (min-width:60rem) {
+    .home-about {
+        background-image: url(img/who-we-are.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+    .home-about-textbox {
+        width: 42%;
+        text-align: left;
+        padding: 5em;
+        top: -5em;
+        outline-offset: -3em;
+        box-shadow: .1em .1em 3rem 0 rgba(0, 0, 0, .50);
+    }
+    .home-about-textbox h1 {
+        font-size: 1.8em;
+        top: 1em;
+    }
+    .home-about-textbox p:first-of-type {
+        margin-top: 0;
+    }
+    .home-about-textbox p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+p::first-letter {
+    color: #00ff6c;
+    font-weight: 700;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media (max-width:25rem) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:31rem) {
+    .home-about-textbox h1 {
+        font-size: 1.8em;
+        top: .5em;
+        padding: 0.2em;
+    }
+}
+
+@media (max-width:22rem) {
+    .home-about-textbox h1 {
+        top: .55em;
+        padding: 0.1em;
+    }
+}
+
+
+/************BUTTONS PART************/
+
+
+/***********************************/
+
+.button {
+    font-size: 1.25rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+.button-accent {
+    color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background-color: #00ff6c;
+    color: #232323;
+    border-color: #00ff6c;
+}
+
+.small-button {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.button-dark {
+    color: #232323;
+    border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+    color: #00ff6c;
+    background-color: #232323;
+}
+
+@media (min-width:60rem) {
+    .button {
+        font-style: 1.8rem;
+    }
+    .small-button {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+
+/************PORTFOLIO AREA************/
+
+
+/***********************************/
+
+.portfolio {
+    margin: 3em 0 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+.port-desc {
+    position: absolute;
+    left: 0em;
+    right: 0em;
+    bottom: 0em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5em;
+}
+
+.port-desc p {
+    margin: .5em;
+    text-align: center;
+}
+
+.port-item img {
+    display: block;
+    /* to remove the small space vertically bw the images , which occurs wehn images rare the only thind in the div*/
+}
+
+@media (min-width:37rem) {
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width:60rem) {
+    .port-item {
+        width: 33.3%;
+        overflow: hidden;
+    }
+    .port-desc {
+        transform: translateY(150%);
+    }
+    .port-item:hover .port-desc {
+        transform: translateY(0%);
+    }
+}
+
+
+/************CTA AREA************/
+
+
+/***********************************/
+
+.cta {
+    background-color: #00ff6c;
+    padding: 5.5em 0;
+}
+
+.cta .title {
+    margin: 0 0 .5em;
+}
+
+
+/************FOOTER AREA************/
+
+
+/***********************************/
+
+footer {
+    color: #fff;
+    background-color: #232323;
+    text-align: left;
+    padding: 5em 0;
+}
+
+
+/*************COLUMN PART************/
+
+[class^=col-] {
+    float: left;
+    padding: 0 .6em;
+    line-height: 1.4;
+}
+
+[class^=col-]:first-of-type {
+    padding-left: 0;
+}
+
+[class^=col-]:last-of-type {
+    padding-right: 0;
+}
+
+.col-3 {
+    width: 50%;
+}
+
+.col-1 {
+    width: 16.666;
+}
+
+@media (max-width:60rem) {
+    [class^=col-] {
+        float: left;
+        padding: 0 .6em;
+        line-height: 1.4;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-1 {
+        width: 33.33%;
+        display: flex;
+    }
+    .col-1:nth-child(3) {
+        justify-content: center;
+    }
+    .col-1:nth-child(4) {
+        justify-content: flex-end;
+        padding-right: .4em;
+    }
+}
+
+@media (max-width:28rem) {
+    [class^=col-] {
+        float: none;
+        padding: 1em .6em;
+        line-height: 1.4;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .col-1:nth-child(4) {
+        justify-content: center;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@font-face {
+    font-family: grifter;
+    src: url(GRIFTER™+Bold.otf);
+}
+
+*,
+*::after,
+*::before,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-family: grifter;
+    text-transform: uppercase;
+}
+
+h1.heading {
+    font-size: 2.4rem;
+    opacity: .8;
+}
+
+.landing-page-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #09383e;
+    background-image: url(hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.landing-page-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.header {
+    width: 100%;
+    height: 2rem;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-icon {
+    width: 2.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.menu-icon__line {
+    width: 1.5rem;
+    height: .2rem;
+    background: white;
+    display: block;
+}
+
+.menu-icon__line::before,
+.menu-icon__line::after {
+    content: '';
+    width: 1.5rem;
+    height: .2rem;
+    background: white;
+    display: inline-block;
+    position: relative;
+}
+
+.menu-icon__line::before {
+    left: .5rem;
+    top: -0.6rem;
+}
+
+.menu-icon__line::after {
+    top: -1.8rem;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.social-container {
+    width: 7rem;
+    list-style: none;
+    float: right;
+}
+
+.social-container .social__icon i {
+    width: 1.5rem;
+    float: left;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.social-container .social__icon.social__icon--fb i {
+    margin-left: -1rem;
+}
+
+.social-container .social__icon.social__icon--dr i {
+    margin-left: 1rem;
+}
+
+.social-container .social__icon.social__icon--in i {
+    margin-left: 1rem;
+}
+
+.coords {
+    font-size: .6rem;
+    display: inline-block;
+    position: relative;
+    top: 35%;
+    letter-spacing: .2rem;
+    left: -7rem;
+    transform: rotate(-90deg);
+    opacity: .8;
+}
+
+.ellipse-container {
+    width: 22rem;
+    height: 22rem;
+    margin: 0 auto;
+    position: relative;
+    top: 7rem;
+}
+
+.greeting {
+    position: absolute;
+    top: 6.5rem;
+    left: -12rem;
+    letter-spacing: 3.5rem;
+    font-size: 6rem;
+    opacity: .6;
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: rgba(255, 255, 255, .1);
+}
+
+.ellipse-container .greeting::before {
+    content: '\f30b';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    transform: scale(0) translateX(0);
+    transform-origin: left;
+    transition: transform 5s ease-in-out;
+    opacity: .6;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px white;
+}
+
+.ellipse-container:hover .greeting::before {
+    transform: scale(2) translateX(30vw);
+}
+
+.ellipse {
+    border-radius: 50%;
+    position: absolute;
+    border-style: solid;
+}
+
+.ellipse__outer--thin {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: white;
+    opacity: .6;
+    animation: ellipseOrbit 15s ease-in-out infinite;
+}
+
+.ellipse__outer--thick {
+    width: 100%;
+    height: 100%;
+    border-color: white transparent;
+    border-width: 5px;
+    animation: ellipseRotate 15s ease-in-out infinite;
+    opacity: .5;
+}
+
+.ellipse__orbit {
+    width: 2.5rem;
+    position: absolute;
+    height: 2.5rem;
+    border-width: 2px;
+    border-color: white;
+    top: -.9rem;
+    right: 6.75rem;
+}
+
+.ellipse__orbit::before {
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes ellipseRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes ellipseOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+*/
