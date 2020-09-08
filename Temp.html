@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Temp</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            font-size: 10px;
+            --buttons: rgba(255, 255, 255, 0.6);
+        }
+        
+        body {
+            background: linear-gradient(45deg, #ff3e3c, #ff3e);
+            width: 100%;
+            height: 100%;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        span {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+        
+        button {
+            background-color: var(--buttons);
+            border: none;
+            height: 3.6rem;
+            border-radius: 50%;
+            height: 4rem;
+            width: 4rem;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        svg {
+            fill: #333;
+        }
+        
+        img {
+            border: none;
+            background-color: #ff3e;
+            height: 3.6rem;
+            width: 3.6rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        main {
+            position: relative;
+            margin: 0 auto;
+            max-width: 48rem;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width:48rem) {
+            main {
+                max-width: 48rem;
+            }
+        }
+        
+        main>div {
+            width: 50%;
+        }
+        
+        .back-btn {
+            margin: 2rem;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        .top-right {
+            position: relative;
+        }
+        
+        .profile {
+            position: absolute;
+            right: 2rem;
+            justify-content: end;
+            font-size: 1.2rem;
+            align-items: center;
+            display: flex;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width:48rem) {
+            .profile {
+                right: 5rem;
+            }
+        }
+        
+        .new-post-btn {
+            background-color: transparent;
+        }
+        
+        .top-right span {
+            margin: 0 1rem 0 0;
+            color: #333;
+        }
+        
+        .bottom-left {
+            position: relative;
+            color: #fff;
+        }
+        
+        .video-data {
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+        }
+        
+        .video-data * {
+            margin: .5rem 0;
+        }
+        
+        .user {
+            display: flex;
+            align-items: center;
+        }
+        
+        .user .username {
+            margin-left: 1rem;
+        }
+        
+        .music,
+        .music-icon p {
+            display: inline;
+            margin: 0 .5rem 0 0;
+        }
+        
+        .music-icon {
+            display: flex;
+            align-items: center;
+            background-color: var(--buttons);
+            border-radius: 4rem;
+            -webkit-border-radius: 4rem;
+            -moz-border-radius: 4rem;
+            -ms-border-radius: 4rem;
+            -o-border-radius: 4rem;
+        }
+        
+        .right-panel {
+            position: relative;
+            color: #fff;
+        }
+        
+        .interactions {
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+        }
+        
+        .interactions * {
+            margin: .4rem 0;
+        }
+        
+        .like-btn-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .like-count,
+        .comment-count,
+        .share-count {
+            padding: 0 1.3rem;
+        }
+        
+        @media (max-width:48rem) {
+            .video-data,
+            .interactions {
+                bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <video autoplay  loop>
+        <source src="" type="video/mp4">
+        </video>
+-->
+    <main>
+        <div class="back">
+            <button class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 44"><g class="back" fill=""><path d="M40 22H15.66l11.17-11.17L24 8 8 24l16 16 2.83-2.83L15.66 26H40v-4z"/></g></svg>
+            </button >
+        </div>
+
+        <div class="top-right">
+            <div class="profile">
+                
+            <span class="new">Create New</span>
+            <div class="user-profile-btn">
+                <a href=""><img src="" alt="" height="36px" width="36px"></a>
+            </div>
+        </div>
+        </div>
+        <div class="bottom-left">
+            <div class="video-data">
+                <div class="user">
+                    <img src="" alt="" class="video-user">
+                    <p class="username">Username</p>
+                </div>
+                <div class="video-dec">
+                    <p class="desc">Video Description Goes Here #.</p>
+                </div>
+                <div class="video-music">
+                    <div class="music-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" class="music"><g class="music-icn" fill=""><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></g></svg>
+                        <p>Sound name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="interactions">
+                <div class="like-btn-wrapper"><button class="like-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g class="like-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="#111111" stroke="#111111"><path fill="none" stroke="#111111" stroke-miterlimit="10" d="M21.243,3.757 c-2.343-2.343-6.142-2.343-8.485,0c-0.289,0.289-0.54,0.6-0.757,0.927c-0.217-0.327-0.469-0.639-0.757-0.927 c-2.343-2.343-6.142-2.343-8.485,0c-2.343,2.343-2.343,6.142,0,8.485L12,21.485l9.243-9.243C23.586,9.899,23.586,6.1,21.243,3.757z"/></g></svg></button>
+            <p class="like-count">9k</p>
+        </div>
+        <div class="comment-btn-wrapper"><button class="comment-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g class="comment-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="#111111" stroke="#111111"><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 23,5 23,18 19,18 19,22 13,18 12,18 "/><polygon fill="none" stroke="#111111" stroke-miterlimit="10" points="19,1 1,1 1,14 5,14 5,19 12,14 19,14 "/></g></svg></button>
+            <p class="comment-count">910</p>
+        </div>
+        <div class="share-btn-wrapper"><button class="share-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g class="share-icon" fill="#111111"><path fill="#111111" d="M14.242,9.758c-0.49-0.49-1.052-0.878-1.659-1.169C12.208,8.966,12,9.468,12,10 c0,0.213,0.04,0.415,0.102,0.608c0.259,0.161,0.505,0.343,0.726,0.564C13.583,11.928,14,12.932,14,14s-0.416,2.073-1.171,2.829 l-3,2.999c-1.512,1.512-4.146,1.512-5.657,0C3.416,19.072,3,18.068,3,17s0.416-2.072,1.171-2.828l2.104-2.104 C6.098,11.401,6,10.709,6,10c0-0.162,0.013-0.323,0.023-0.483C5.934,9.596,5.843,9.673,5.757,9.758l-3,3C1.624,13.891,1,15.397,1,17 s0.624,3.109,1.757,4.242C3.891,22.376,5.397,23,7,23s3.109-0.624,4.243-1.758l3-2.999C15.375,17.109,16,15.603,16,14 S15.375,10.891,14.242,9.758z"/><path data-color="color-2" d="M21.243,2.758C20.109,1.624,18.603,1,17,1s-3.109,0.624-4.243,1.758l-3,2.999 C8.625,6.891,8,8.397,8,10s0.624,3.109,1.757,4.242c0.49,0.49,1.052,0.878,1.659,1.169C11.792,15.034,12,14.532,12,14 c0-0.218-0.041-0.425-0.106-0.622c-0.258-0.155-0.503-0.332-0.721-0.55C10.417,12.072,10,11.068,10,10s0.416-2.073,1.171-2.829 l3-2.999C14.927,3.416,15.932,3,17,3s2.073,0.416,2.829,1.172C20.584,4.928,21,5.932,21,7s-0.416,2.072-1.171,2.828l-2.107,2.107 C17.9,12.601,18,13.292,18,14c0,0.162-0.012,0.322-0.021,0.482c0.089-0.079,0.18-0.155,0.265-0.24l3-3C22.376,10.109,23,8.603,23,7 S22.376,3.891,21.243,2.758z"/></g></svg></button>
+            <p class="share-count">90</p>
+        </div>
+        </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
