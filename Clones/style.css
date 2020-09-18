@@ -1,0 +1,294 @@
+/***********UNIVERSAL STYLING************/
+
+*,
+*::before,
+*::after,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --fb-blue: #1877f2;
+    --fb-green: #42b72a;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/******************FACEBOOK LOGIN COPY****************/
+
+.fb-copy {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fb-main-section {
+    background-color: #f0f2f5;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr [left-section-start]5fr[left-section-end right-section-start] 5fr[right-section-end] 1fr;
+}
+
+.fb-left-branding {
+    grid-column: left-section-start/left-section-end;
+    grid-row: 2/3;
+}
+
+.fb-left-header {
+    color: var(--fb-blue);
+    font-size: 3.6rem;
+    margin: 5rem 0 0 4rem;
+}
+
+.fb-left-desc {
+    font-size: 1.8rem;
+    margin: 0 0 0 4rem;
+}
+
+.fb-right-form {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    padding: 1.5rem 5rem;
+}
+
+.fb-right-form-wrapper {
+    position: relative;
+    background-color: #fff;
+    height: 21.4rem;
+    width: 24.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+    box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.15), -10px 0 10px -10px rgba(0, 0, 0, 0.15), 0px 10px 10px -10px rgba(0, 0, 0, 0.35), 0px -10px 10px -10px rgba(0, 0, 0, 0.1);
+}
+
+.fb-right-form-wrapper * {
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+
+.fb-right-form-wrapper input {
+    border: 1px solid lightgrey;
+    padding: .9rem;
+    margin-bottom: .8rem;
+    font-size: 1.12rem;
+    color: rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.fb-right-form-blue-btn {
+    background-color: var(--fb-blue);
+    color: white;
+    text-align: center;
+    padding: .8rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.fb-right-form-link {
+    color: var(--fb-blue);
+}
+
+.fb-right-form-link::after {
+    content: '';
+    position: absolute;
+    left: .8rem;
+    right: .8rem;
+    background-color: lightgrey;
+    height: 1px;
+    display: block;
+    margin: 1rem 0;
+}
+
+.fb-right-form-green-btn {
+    background-color: var(--fb-green);
+    color: white;
+    font-weight: bold;
+    margin: 1.65rem 0;
+    display: inline-block;
+    width: auto !important;
+}
+
+.fb-right-form small {
+    display: block;
+    margin: 1.8rem 3.5rem;
+}
+
+
+/*************************WHATSAPP WEB COPY***************/
+
+.wa-copy {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.wa-left-wrapper {
+    width: 37rem;
+    height: 100%;
+    border-right: 1px solid lightgrey;
+}
+
+.wa-left-head {
+    height: 3.6rem;
+    background-color: #ededed;
+    display: flex;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+}
+
+.wa-left-head-img img,
+.wa-left-head-img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wa-left-head-right {
+    margin: .5rem 1rem;
+    display: flex;
+    width: 7rem;
+    justify-content: space-between;
+}
+
+.wa-left-search {
+    height: 3.1rem;
+    padding: .5rem 1.1rem;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid lightgrey;
+}
+
+.wa-left-search input {
+    width: 100%;
+    height: 2.1rem;
+    border-radius: 1rem;
+    background-color: white;
+    background-image: url(/images/Asset\ 4@2x.png);
+    background-size: .8rem;
+    background-repeat: no-repeat;
+    background-position: 1rem .6rem;
+    color: grey;
+    padding: 0 3rem;
+    outline: none;
+    border: none;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.wa-left-chats {
+    background-color: #fff;
+    height: calc(100vh - 6.7rem);
+    overflow-y: auto;
+}
+
+.wa-left-single-chat {
+    display: flex;
+    padding: .6rem 1rem;
+    position: relative;
+    flex-direction: rows;
+}
+
+.wa-left-single-chat:hover {
+    background-color: #f0f2f5;
+}
+
+.wa-left-single-chat-img,
+.wa-left-single-chat-img img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.wa-left-single-chat-desc {
+    color: grey;
+}
+
+.wa-left-single-chat-text::after {
+    content: '';
+    height: 1px;
+    left: 5rem;
+    right: 0;
+    margin-top: 1.3rem;
+    background-color: lightgrey;
+    position: absolute;
+}
+
+.wa-right-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.wa-right-banner {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.wa-right-banner-head {
+    color: #444;
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: lighter;
+}
+
+.wa-right-banner-desc {
+    color: grey;
+    font-size: .8rem;
+    max-width: 30rem;
+    line-height: 1.4rem;
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    color: rgb(240, 240, 240);
+    height: 1px;
+    width: 80%;
+    display: block;
+    margin: 2rem auto;
+}
+
+.wa-right-banner-link {
+    color: grey;
+    font-size: .9rem;
+}
+
+.wa-right-banner-link img {
+    position: relative;
+    padding: 0 .5rem;
+    bottom: -.3rem;
+}
+
+.wa-right-banner-link a {
+    color: var(--fb-green);
+}
+
+
+/********************/
