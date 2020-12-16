@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-    background-image: linear-gradient(135deg, rgb(14, 18, 83, .8), rgb(25, 28, 89, .4));
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
+    background-image: linear-gradient(135deg, rgb(20, 18, 83, .9), rgb(25, 28, 89, .4));
 }
 
 
@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: .7rem 3.5rem;
+    padding: 1.4rem 3.5rem;
     list-style: none;
 }
 
@@ -32,26 +32,24 @@ body {
 
 .nav_wrapper ul a {
     text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
     color: #f0f0f0;
 }
 
 .nav_wrapper ul li:nth-child(1) {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .nav_wrapper ul li:nth-child(2) {
-    font-size: 13px;
+    font-size: .9rem;
     letter-spacing: 2px;
-    padding-right: 20px;
+    padding-right: 1.3rem;
 }
 
 
 /* Container with Banner */
 
 .banner .banner_text {
-    max-width: 23rem;
+    max-width: 24rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -62,28 +60,23 @@ body {
 }
 
 .banner .banner_text p:nth-child(1) {
-    font-size: 39px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.6rem;
     font-weight: 600;
 }
 
 .banner .banner_text p:nth-child(2) {
-    font-size: 19px;
-    margin: 8px 0px;
+    font-size: 1.2rem;
+    margin: .8rem 0;
 }
 
 .banner .banner_text a {
     background-color: #fff;
-    color: #222;
-    padding: 10px 40px;
+    color: rgb(25, 28, 89, .7);
+    padding: .6rem 1.8rem;
     margin: 2rem 0rem;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1.3px;
-    cursor: pointer;
-    font-family: 'Josefin Sans', sans-serif;
-    pointer-events: all;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
 }
 
 .banner div:nth-child(2) {
@@ -121,7 +114,6 @@ body {
     }
     .banner .banner_text p:nth-child(1) {
         font-size: 30px;
-        font-family: 'Josefin Sans', sans-serif;
         font-weight: 600;
     }
     .banner .banner_text p:nth-child(2) {
@@ -132,7 +124,6 @@ body {
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 1.3px;
-        font-family: 'Josefin Sans', sans-serif;
         margin: 1rem 0rem;
     }
     .wave {
@@ -149,17 +140,17 @@ body {
 
 .container {
     background-color: #fff;
+    color: rgba(147, 149, 196, 0.8);
 }
 
 .text-container {
-    font-size: 32px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 13vh 0;
+    padding: 6rem 0;
 }
 
 .text-container span {
@@ -189,24 +180,19 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 4rem 0px;
+    margin: 2rem 0rem;
     margin-bottom: 0rem;
-    align-items: center;
-}
-
-.card-teen {
-    margin-bottom: 1rem;
+    align-items: baseline;
 }
 
 .rate_card {
-    max-width: 20rem;
-    height: 20rem;
+    max-width: 22rem;
+    height: 24rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    pointer-events: none;
 }
 
 .card_head {
@@ -214,51 +200,54 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .card_head span {
     background: linear-gradient(135deg, rgba(14, 17, 83, 0.8), rgba(25, 28, 88, 0.4));
     border: 10px solid hsl(0, 0%, 80%);
     color: #fff;
-    font-size: 33px;
-    padding: .6rem 1.2rem;
     border-radius: 50%;
-    margin-right: 16px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    max-width: 4.2rem;
+}
+
+.rate_card:nth-child(1) span {
+    padding: .6rem 1.2rem;
+}
+
+.rate_card:nth-child(2) span {
+    padding: .6rem 1.1rem;
+}
+
+.rate_card:nth-child(3) span {
+    padding: .6rem 1.1rem;
 }
 
 .card_head h2 {
-    font-size: 22px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
-    line-height: 35px;
+    font-size: 1.6rem;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .rate_card p {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1rem;
     letter-spacing: 1.2px;
     line-height: 26px;
+    color: #888;
 }
 
 .rate_card button {
     align-self: flex-start;
-    margin: 25px 0;
+    margin: 1.5rem 0;
     padding: .8rem 4rem;
     background: linear-gradient(135deg, #0e115399, rgba(25, 28, 88, 0.4));
     color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 19px;
-    font-weight: 600;
+    font-size: 1.1rem;
     letter-spacing: 2px;
     border: none;
     outline: none;
-    border-radius: 3px;
+    border-radius: 2px;
     cursor: pointer;
-    pointer-events: all;
 }
 
 @media(max-width:700px) {
@@ -483,7 +472,7 @@ body {
 }
 
 
-/* How it works */
+/* How it works
 
 .working {
     width: 100%;
@@ -499,7 +488,6 @@ body {
 }
 
 .work-head {
-    /* background-color: #222; */
     padding: 20px 0px;
     margin-top: 20px;
     display: flex;
@@ -537,5 +525,143 @@ body {
 .work-head p {
     font-size: 19px;
     letter-spacing: 2px;
-    /* background-color: #222 */
 }
+
+footer {
+    bottom: 0;
+}
+
+@media (max-height:50rem) {
+    footer {
+        position: static;
+    }
+}
+
+.footer {
+    background-color: var(--black);
+    width: 100%;
+    text-align: left;
+    padding: 50px 50px 60px 50px;
+    margin-top: 5rem;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: var(--white);
+    font-family: var(--sans);
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.footer .footer-left img {
+    width: 30%;
+}
+
+.footer .footer-links {
+    color: var(--white);
+    margin: 1.2rem 0 .8rem;
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    margin-right: .6rem;
+}
+
+.footer .footer-company-name {
+    color: var(--grey);
+    font-size: .9rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 25px;
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    margin: .7rem 1rem;
+    vertical-align: middle;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: var(--white);
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: var(--grey);
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-company-about {
+    line-height: 20px;
+    color: var(--grey);
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-company-about span {
+    display: block;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.footer .footer-icons {
+    margin-top: 1.5rem;
+}
+
+.footer .footer-icons a {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+@media (max-width: 55rem) {
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 2.6rem;
+        text-align: center;
+    }
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+} */
