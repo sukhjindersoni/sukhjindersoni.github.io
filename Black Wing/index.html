@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/bf2610f0a2.js" crossorigin="anonymous"></script>
-
     <title>The Black Wing</title>
 </head>
 
-<body>
+<body onload=loading()>
+    <div class="overlay">
+        <p>Welcome To <br> The Black Wing</p>
+    </div>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav_wrapper">
             <ul>
-                <li><a href="#">The Black Wing</a></li>
-                <li><a href="#">T&C</a></li>
+                <li><a href="/index.html">The Black Wing</a></li>
+                <li><a href="/T&C.html">T&C</a></li>
             </ul>
         </div>
     </nav>
@@ -29,7 +33,7 @@
             <a>Inquire</a>
         </div>
         <div>
-            <img src="banner-bg.svg" alt="banner illustration">
+            <img src="img/banner-bg.svg" alt="banner illustration">
         </div>
     </div>
     <!-- Wave -->
@@ -37,12 +41,12 @@
 
     <!-- Ad Text and Rate card -->
     <div class="container">
-        <div class="text-container">
+        <div class="text-container" data-aos="slide-left">
             <span>Get the best and cheapest services <br>for your Telegram right away.</span>
             <span><small>Flood Your channels and groups with members <br> using Social Dhillon's Service.</small></span>
         </div>
         <div class="card">
-            <div class="rate_card">
+            <div class="rate_card" data-aos="fade-right">
                 <div class="card_head">
                     <span>1</span>
                     <h2>Script For Group Members</h2>
@@ -50,7 +54,7 @@
                 <p>The script will help you gain members from reputed groups (original audience)and add them to your groups, no fraud and no fake users</p>
                 <button>Rs 600</button>
             </div>
-            <div class="rate_card">
+            <div class="rate_card" data-aos="fade-up">
                 <div class="card_head">
                     <span>2</span>
                     <h2>Script For Group Messages</h2>
@@ -59,12 +63,12 @@
                 <button>Rs 500</button>
 
             </div>
-            <div class="rate_card">
+            <div class="rate_card" data-aos="fade-left">
                 <div class="card_head">
                     <span>3</span>
                     <h2>Gain Channel Members</h2>
                 </div>
-                <p>Flood your channels and groups with members using Social Dhillon 's Services . Ask for prices on telegram and reach our telegram through the button given below .Price starts from Rs 500 for 1000 members</p>
+                <p>Flood your channels and groups with members using Social Dhillon 's Services . Reach our telegram through the button given below .Price starts from Rs 500 for 1000 members</p>
                 <button>Rs 500</button>
 
             </div>
@@ -72,33 +76,34 @@
         </div>
 
     </div>
-    <!-- Why us Container
+    <!-- Why choose us section -->
     <div class="why_us">
         <svg class="why-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L34.3,154.7C68.6,149,137,139,206,112C274.3,85,343,43,411,42.7C480,43,549,85,617,128C685.7,171,754,213,823,229.3C891.4,245,960,235,1029,218.7C1097.1,203,1166,181,1234,165.3C1302.9,149,1371,139,1406,133.3L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
         <h1 class="why-heading">
             Why Choose Us?
         </h1>
         <div class="why-reasons">
-            <span>
+            <span data-aos="fade-left">
                 <h2>Support only 247 </h2>
             <p>We are proud to have the most reliable or fastest support in replying to your tickets 247
             </p>
             </span>
-            <span>
+            <span data-aos="fade-up">
                 <h2>Trusted and reliable sources </h2>
             <p>We work for you , you have a problem ? inquiry ? about the service ? slide in to out dms and ask directly. no curtains .
             </p>
             </span>
-            <span>
+            <span data-aos="fade-right">
                 <h2>Original Content,Audience</h2>
             <p>All the audience and services are from trusted sources , the audience will be added from different reputed groups so no mugging.
             </p>
             </span>
         </div>
     </div>
+    <!-- News Letter Box -->
     <div class="newsbox">
         <div class="newsletter">
-            <div class="newsletter-content">
+            <div class="newsletter-content" data-aos="fade-left">
                 <h1>NEWSLETTER</h1>
                 <p>Fill in your Email to get Updates</p>
                 <input type="email">
@@ -106,11 +111,12 @@
                     <button>Subscribe</button>
                 </div>
             </div>
-            <div class="newsletter-svg">
-                <img src="undraw_subscribe_vspl(1).svg" alt="Subscribe">
+            <div class="newsletter-svg" data-aos="fade-out">
+                <img src="img/undraw_subscribe_vspl(1).svg" alt="Subscribe">
             </div>
         </div>
     </div>
+    <!-- How it works section -->
     <div class="working">
         <div class="work-head">
             <h2>How it works</h2>
@@ -118,72 +124,76 @@
         </div>
         <div class="work-steps">
             <div class="card">
-                <div class="rate_card">
+                <div class="rate_card" data-aos="slide-left">
                     <div class="card_head steps">
                         <span>1</span>
-                        <h2>Step Name</h2>
+                        <h2>Select</h2>
                     </div>
                     <p>No need of any login or ids , just select whichever service you want whether its the scripts or the channel members</p>
                 </div>
-                <div class="rate_card">
+                <div class="rate_card" data-aos="zoom-in">
                     <div class="card_head steps">
                         <span>2</span>
-                        <h2>Step Name</h2>
+                        <h2>Inquire</h2>
                     </div>
                     <p>Reach us through the telegram link (buying buttons) and inform us about the service you want and the quantity , ask your queries and get satisfied</p>
                 </div>
-                <div class="rate_card">
+                <div class="rate_card" data-aos="slide-right">
                     <div class="card_head steps">
                         <span>3</span>
-                        <h2>Step Name</h2>
+                        <h2>Pay</h2>
                     </div>
                     <p>After all that pay through your preferred medium and enjoy</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- footer section -->
     <footer class="footer">
-
         <div class="footer-left">
-
             <h3>The Black Wing</h3>
-
             <p class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">T&C</a>
-
+                <a href="/index.html">Home</a>
+                <a href="/T&C.html">T&C</a>
             </p>
-
-            <p class="footer-company-name">© 2020 The Black Wings</p>
+            <p class="footer-company-name">&copy; 2020 The Black Wings</p>
         </div>
-
         <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span> 194 Osmaston Rd, Derby DE23 8JZ, </span>United Kingdom </p>
-            </div>
-
             <div>
                 <i class="fa fa-phone"></i>
                 <p>+44 1332 712800</p>
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@royalcrownderby.com">support@royalcrownderby.com</a></p>
+                <p><a href="mailto:support@blackwings.com">support@blackwings.com</a></p>
             </div>
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>Black Wing is a social media boosting services providing platform ,to help aur users get the genuine audience and increase there presence on different platforms</p>
             <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-telegram"></i></a>
+
                 <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
         </div>
-    </footer> -->
+        <div class="credits"><a href="https://www.instagram.com/the_codesigner/">Design by: @ Co_Designer</a></div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            delay: 0,
+            duration: 600,
+        });
+        var loader = document.querySelector('.overlay');
+
+        function loading() {
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 2000);
+        }
+    </script>
 </body>
 
 </html>
