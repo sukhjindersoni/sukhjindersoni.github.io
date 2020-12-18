@@ -42,7 +42,7 @@ body {
 
 @media(max-width:600px) {
     .overlay {
-        height: 200vh;
+        height: 100vh;
         font-size: 2.6rem;
         overflow: hidden;
     }
