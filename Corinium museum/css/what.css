@@ -1,0 +1,154 @@
+.section-head {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+@media (max-width:50rem) {
+    .section-head {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 30rem;
+    width: 30%;
+    margin: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px #000;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.card div:nth-child(1) img {
+    height: 20rem;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0px 2px 6px #000;
+}
+
+.card_info {
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card_info p {
+    display: none;
+    pointer-events: none;
+}
+
+.card_info span {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #868686;
+}
+
+.card:hover .card-img {
+    position: absolute;
+    height: 30rem;
+    width: 30vw;
+    opacity: 0.4;
+}
+
+.card:hover .card_info {
+    position: relative;
+    margin-top: 19rem;
+    z-index: 15;
+}
+
+.card:hover .card_info span {
+    display: none;
+}
+
+.card:hover .card_info p {
+    display: block;
+}
+
+@media(max-width:600px) {
+    .cards {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .card:hover .card-img {
+        width: 100%;
+    }
+}
+
+.cta {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.lists {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.lists li {
+    margin: 1rem;
+}
+
+.cta:first-child {
+    margin
+}
+
+.newsletter {
+    height: 10rem;
+    height: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+}
+
+.newsletter p,
+input {
+    margin: 1rem 0;
+}
+
+.newsletter input {
+    padding: .8rem 1.6rem;
+    ;
+}
+
+.newsletter p:nth-child(1) {
+    font-size: 2.2rem;
+    font-weight: var(--thick);
+}
+
+.newsletter input:nth-child(2) {
+    border: 0;
+    background-color: white;
+    color: #222;
+}

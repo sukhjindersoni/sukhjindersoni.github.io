@@ -1,0 +1,129 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+header,
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+header {
+    padding: 2rem;
+}
+
+header>.logo {
+    font-family: var(--sans);
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+header>.logo>small {
+    font-size: .8rem;
+    font-family: var(--serif);
+    display: block;
+    text-align: center;
+}
+
+header input,
+.ham_menu input {
+    width: 20rem;
+    height: 1.6rem;
+    border: none;
+    padding: 1.1rem 3.2rem;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--black);
+    background: url("/Images/search.png") .6rem .4rem no-repeat;
+    background-size: 1.2rem 1.2rem;
+    outline: none;
+}
+
+nav>ul {
+    width: 36rem;
+    text-align: center;
+    position: relative;
+    margin: 1.2rem auto;
+    padding: 0;
+    white-space: nowrap;
+}
+
+nav>ul li a:hover {
+    color: var(--purple);
+}
+
+nav>ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--purple);
+    transition: width .3s;
+}
+
+nav>ul li a:hover::after {
+    width: 100%;
+}
+
+@media (min-width:50rem) {
+    .hamburger,
+    .ham_menu {
+        display: none;
+    }
+}
+
+@media (max-width:50rem) {
+    header>.search,
+    header>a,
+    nav {
+        display: none;
+    }
+}
+
+.hamburger>i {
+    position: absolute;
+    right: 2rem;
+    top: 2.1rem;
+    cursor: pointer;
+}
+
+.ham_menu {
+    display: none;
+    /* position: absolute; */
+    background-color: var(--white);
+    height: calc(100vh - 6.4rem);
+    width: 100%;
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hamburger>input {
+    position: absolute;
+    right: 1.75rem;
+    top: 1rem;
+    opacity: 0;
+    display: block;
+    height: 1.4rem;
+    width: 1.4rem;
+    cursor: pointer;
+}
+
+.hamburger>input:checked~.ham_menu {
+    display: block;
+}
+
+.ham_menu ul {
+    margin-top: 2rem;
+    list-style-type: none;
+}
+
+.ham_menu ul>li {
+    padding: .8rem;
+}

@@ -1,0 +1,59 @@
+.card-history {
+    /* background-color: red; */
+    width: 90%;
+    height: 25rem;
+    overflow: hidden;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.history-photo {
+    /* object-fit: cover; */
+    width: 50%;
+    /* width: 20rem; */
+}
+
+.history-text {
+    background-color: #777;
+    padding: 20px;
+    align-self: center;
+}
+
+@media(max-width:600px) {
+    .card-history {
+        width: 100%;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        /* margin: 0; */
+    }
+}
+
+.promote {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 3rem 0rem;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:50rem) {
+    .promote div {
+        margin: 1.6rem 0rem;
+    }
+}
+
+.property-image:nth-child(1) {
+    background-image: url('https://coriniummuseum.org/wp-content/uploads/2018/02/PH4-1976.363-612x450.jpg');
+}
+
+.property-image:last-of-type {
+    background-image: url('https://coriniummuseum.org/wp-content/uploads/2018/02/CW-P11-1-612x450.jpg');
+}

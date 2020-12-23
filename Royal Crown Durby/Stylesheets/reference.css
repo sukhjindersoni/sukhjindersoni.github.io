@@ -1,0 +1,33 @@
+.banner {
+    background-image: url(/Images/14.jpg);
+}
+
+.links {
+    margin: 5rem auto;
+}
+
+.links tr a {
+    display: block;
+    border-bottom: 1px solid #222;
+    text-align: center;
+    width: 50vw;
+    padding: 12px 0px;
+    margin: 2rem 0px;
+}
+
+.links tr a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:50rem) {
+    .links tr a {
+        width: 90vw;
+    }
+}

@@ -1,0 +1,39 @@
+.banner {
+    background-image: url(https://www.royalcrownderby.co.uk/media/catalog/category/Lifestyle.jpg);
+}
+
+.accessories {
+    padding: 2rem;
+}
+
+.descriptions {
+    padding: 2rem;
+}
+
+.card {
+    height: 18rem;
+}
+
+.newsletter {
+    margin-top: 4rem;
+}
+
+.festive img {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+}
+
+.festive_info {
+    color: white;
+}
+
+.festive_info input {
+    color: white;
+    border: 1px solid white;
+}
+
+.festive_info input:hover {
+    background-color: #fff;
+    color: var(--black);
+}
